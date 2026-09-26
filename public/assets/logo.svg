@@ -1,0 +1,22 @@
+<svg viewBox="0 0 540 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield Badge Symbol -->
+  <g transform="translate(10, 5)">
+    <!-- Left Dark Blue Shield Half -->
+    <path d="M60 2 C32 12 12 18 2 24 C2 58 10 90 60 118 C60 118 42 80 42 50 C42 20 60 2 60 2 Z" fill="#073b67"/>
+    <!-- Inner Blue Arc -->
+    <path d="M60 2 C60 2 2 24 2 60 C2 92 35 112 60 118 C30 95 18 70 18 50 C18 28 60 2 60 2 Z" fill="#052c4e"/>
+    <!-- Right Green Leaf / Ribbon Curve -->
+    <path d="M60 118 C75 108 95 90 108 65 C118 45 118 24 118 24 C100 18 78 12 60 2 C60 2 76 25 76 52 C76 82 60 118 60 118 Z" fill="#1b6b14"/>
+    <path d="M60 118 C80 98 94 75 94 50 C94 28 60 2 60 2 C72 20 84 38 84 55 C84 80 60 118 60 118 Z" fill="#2f8b23"/>
+    
+    <!-- White Circle Background for 'K' -->
+    <circle cx="60" cy="50" r="34" fill="#ffffff" stroke="#073b67" stroke-width="4"/>
+    
+    <!-- 'K' Monogram -->
+    <text x="60" y="65" font-family="'Outfit', 'Inter', Arial, sans-serif" font-size="44" font-weight="900" fill="#073b67" text-anchor="middle">K</text>
+  </g>
+
+  <!-- Typography: KAASHVI HEALTHCARE -->
+  <text x="148" y="70" font-family="'Outfit', 'Inter', Arial, sans-serif" font-size="62" font-weight="900" fill="#073b67" letter-spacing="3.5">KAASHVI</text>
+  <text x="150" y="112" font-family="'Outfit', 'Inter', Arial, sans-serif" font-size="34" font-weight="800" fill="#073b67" letter-spacing="11">HEALTHCARE</text>
+</svg>

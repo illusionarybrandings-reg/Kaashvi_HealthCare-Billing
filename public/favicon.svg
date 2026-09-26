@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <!-- Shield Emblem -->
+  <g transform="translate(0, 0)">
+    <!-- Left Dark Blue Shield Wing -->
+    <path d="M60 4 C32 14 12 20 4 26 C4 60 12 92 60 118 C60 118 42 80 42 50 C42 20 60 4 60 4 Z" fill="#073b67"/>
+    <!-- Inner Blue Arc -->
+    <path d="M60 4 C60 4 4 26 4 62 C4 94 36 112 60 118 C30 95 18 70 18 50 C18 28 60 4 60 4 Z" fill="#052c4e"/>
+    <!-- Right Green Leaf Curve -->
+    <path d="M60 118 C75 108 95 90 108 65 C116 45 116 26 116 26 C98 20 76 14 60 4 C60 4 76 25 76 52 C76 82 60 118 60 118 Z" fill="#1b6b14"/>
+    <path d="M60 118 C80 98 94 75 94 50 C94 28 60 4 60 4 C72 20 84 38 84 55 C84 80 60 118 60 118 Z" fill="#2f8b23"/>
+    
+    <!-- White Circle Center -->
+    <circle cx="60" cy="52" r="32" fill="#ffffff" stroke="#073b67" stroke-width="4"/>
+    
+    <!-- Bold 'K' Monogram -->
+    <text x="60" y="66" font-family="'Outfit', 'Inter', Arial, sans-serif" font-size="42" font-weight="900" fill="#073b67" text-anchor="middle">K</text>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+{
+  "name": "kaashvi_bill_generator",
+  "version": "1.0.0",
+  "description": "Kaashvi Healthcare - Professional Medical Bill Generator & Fullstack Invoicing System",
+  "type": "module",
+  "main": "server/server.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "kaashvi-healthcare",
+    "bill-generator",
+    "medical-invoice",
+    "react",
+    "express",
+    "fullstack"
+  ],
+  "author": "Kaashvi Healthcare",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "lucide-react": "^0.477.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "vite": "^6.2.0"
+  }
+}
