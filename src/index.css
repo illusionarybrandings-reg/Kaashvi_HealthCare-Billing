@@ -898,11 +898,47 @@ button, input, select, textarea {
 .qr-badge { background: white; color: var(--navy); margin: 4px 0 0; padding: 0; font-size: 10px; }
 .inv-qr-wrap .qr-txt { font-weight: 400; color: #64748b; font-size: 9px; margin-top: 1px; }
 .inv-sign-box { margin-top: 20px; margin-bottom: 10px; }
-.inv-sig { width: 31%; font-size: 10px; }
-.inv-sig .spacer { height: 60px; display: flex; align-items: center; justify-content: center; }
-.inv-stamp { width: 85px; height: 60px; object-fit: contain; }
-.inv-sig .line { font-weight: 400; padding-top: 5px; }
+.inv-sig { width: 32%; font-size: 10px; position: relative; }
+.inv-sig.inv-sig-authorised { width: 38%; }
+.inv-sig .spacer { height: 78px; display: flex; align-items: flex-end; justify-content: center; position: relative; }
+.inv-stamp {
+  width: auto;
+  height: 80px;
+  max-width: 145px;
+  object-fit: contain;
+  margin-bottom: -8px;
+  display: block;
+  filter: contrast(1.05);
+  -webkit-print-color-adjust: exact !important;
+  print-color-adjust: exact !important;
+}
+.inv-sig .line { font-weight: 500; padding-top: 5px; border-top: 1px solid #475569; }
 .inv-footer { border: 0; color: #829ab2; font-size: 8px; padding-top: 4px; }
+
+.seal-toggle-bar {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e293b;
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease;
+}
+.seal-toggle-bar:hover {
+  background: #e2e8f0;
+}
+.seal-toggle-bar input[type="checkbox"] {
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  accent-color: #0284c7;
+}
 @media screen and (max-width: 640px) {
   .inv-brand-heading h2 { font-size: 18px; }
   .inv-payment-grid { grid-template-columns: 1fr; }

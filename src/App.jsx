@@ -77,6 +77,7 @@ export default function App() {
   // Modal State
   const [showPreviewModal, setShowPreviewModal] = useState(false);
   const [qrUnavailable, setQrUnavailable] = useState(false);
+  const [includeSeal, setIncludeSeal] = useState(true);
 
   // Real-time calculations
   const { subtotal, taxableValue, totalGst, grandTotal, amountWords } = useMemo(() => {
@@ -493,6 +494,18 @@ export default function App() {
                 placeholder="Notes / instructions" 
               />
             </div>
+
+            <div className="field-group" style={{ marginTop: '10px' }}>
+              <label style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', cursor: 'pointer', fontSize: '13px', fontWeight: '500', color: 'var(--text-dark)' }}>
+                <input 
+                  type="checkbox" 
+                  checked={includeSeal} 
+                  onChange={(e) => setIncludeSeal(e.target.checked)} 
+                  style={{ width: '16px', height: '16px', cursor: 'pointer', accentColor: 'var(--primary)' }}
+                />
+                Include Official Seal &amp; Signature on Invoice
+              </label>
+            </div>
           </div>
 
           {/* Right Column: Summary Box */}
@@ -554,6 +567,14 @@ export default function App() {
             >
               <X size={14} /> Close
             </button>
+            <label className="seal-toggle-bar" title="Toggle official seal on/off">
+              <input 
+                type="checkbox" 
+                checked={includeSeal} 
+                onChange={(e) => setIncludeSeal(e.target.checked)} 
+              />
+              Official Seal &amp; Sign
+            </label>
             <button 
               type="button" 
               title="Choose Save as PDF in the print dialog" className="btn-bar pdf" 
@@ -772,8 +793,16 @@ export default function App() {
                 <div className="line">Patient / Attendant Signature</div>
               </div>
 
-              <div className="inv-sig">
-                <div className="spacer"></div>
+              <div className="inv-sig inv-sig-authorised">
+                <div className="spacer">
+                  {includeSeal && (
+                    <img 
+                      src="/assets/signature-stamp.png" 
+                      alt="For Kaashvi Healthcare — Authorised Signatory" 
+                      className="inv-stamp"
+                    />
+                  )}
+                </div>
                 <div className="line">For Kaashvi Healthcare — Authorised Signatory</div>
               </div>
             </div>
